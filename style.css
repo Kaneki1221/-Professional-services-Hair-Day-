@@ -98,6 +98,12 @@ h3{
 .card3 {
     grid-area: card3;
 }
+.cards:hover{
+    transform: scale(1.1);
+    transition: 1s ;
+    background-color: rgb(76, 97, 90);
+
+}
 
 @media (max-width: 768px) {
     #container {
