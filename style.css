@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+
+   
+}
+header{
+    padding-top: 10px;
+    background-color: rgb(76, 97, 90);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(15, 34, 41) ;
+    margin: 20px;
+    border-radius: 90%;
+    box-shadow: 2px 2px 2px;
+ 
+}
+#logo-img{
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+   
+}
+ul>a{
+    color: black;
+    font-size: 20px;
+}
+ul{
+    
+    padding:25px;
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color:rgb(226, 212, 212) ;
+    box-shadow: 2px 2px 2px;
+    
+}
+.promo{
+    display: grid;
+    grid-template-areas: "promotions" "card1" "card2" "card3" ;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+   width: 200px;
+  
+    border-radius: 90%;
+}
+h3{
+    text-align: center;
+}
+/* main-seciton */
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    grid-template-areas:   "promotions promotions promotions" "card1 card2 card3"; 
+    background-color: rgb(76, 97, 90);
+    justify-items: center; 
+    align-items: start; 
+    gap: 20px;
+   
+}
+
+.promotions {
+    grid-area: promotions;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.cards {
+    width: 100%; 
+    max-width: 300px; 
+    min-height: 400px;
+    background-color: rgb(24, 23, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+     box-shadow: 1px 1px 10px rgb(0, 0, 0);
+     
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+@media (max-width: 768px) {
+    #container {
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+            "promotions"
+            "card1"
+            "card2"
+            "card3"; 
+    }
+
+    .promotions {
+        margin-top: 20px; 
+    }
+
+    .cards {
+        width: 90%; 
+    }
+}
+/* footer */
+
+#footer-container{
+    display: flex;
+     flex-direction: 1;
+     box-shadow: 2px 2px 2px white;
+     
+     
+    background-color: rgb(219, 219, 208);
+}
+.footer-logo{
+    padding-top: 30px;
+    background-color: rgb(240, 230, 230);
+    padding-bottom: 0px;
+}
+#copyright{
+ display: flex;
+ box-shadow: 2px 2px 2px;
+}
